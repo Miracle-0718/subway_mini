@@ -1,0 +1,6 @@
+/* miniprogram/pages/echarts/test.wxss */
+.chart-box{
+  background: white;
+  width: 100%;
+  height: 500px;
+}

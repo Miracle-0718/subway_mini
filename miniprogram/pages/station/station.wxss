@@ -1,0 +1,82 @@
+/* pages/station/station.wxss */
+.nav{
+  display: flex;
+  height: 60rpx;
+  background-color: rgba(194, 211, 243, 0.521);
+}
+.selected{
+  width: 200rpx;
+  margin-left: 120rpx;
+  border-bottom: 2rpx solid rgb(102, 115, 230);
+  text-align: center;
+}
+.normal{
+  width: 200rpx;
+  margin-left: 120rpx;
+  border-bottom: none;
+  text-align: center;
+}
+
+
+.lineslist{
+  background: #fff;
+  border-bottom: 20rpx solid #f3f3f3;
+}
+.lineListTitle{
+  height: 70rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+}
+.lineListTitle .number{
+  padding-right: 100rpx;
+  background-size: 35rpx 35rpx;
+  color: #999;
+  font-size: 32rpx;
+  padding-left: 80rpx;
+}
+
+.lineListDetails{
+  display: flex;
+  height: 160rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+}
+
+.lineListDetails .Img{
+  flex: 1;
+  height: 110rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.lineListDetails .Img image{
+  width: 80%;
+  height: 100%;
+}
+
+.lineListDetails .stationInfo{
+  flex: 4;
+  padding: 20rpx 30rpx;
+}
+
+.lineListDetails .stationInfo .Title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.lineListDetails .stationInfo .now{
+  float: right;
+font-size: 25rpx;
+color:#999;
+}
+
+.Now_map{
+  height: 1100rpx;
+  width: 100%;
+}
+
+.Now_map map{
+  height: 100%;
+  width: 100%;
+}

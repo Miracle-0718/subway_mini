@@ -1,0 +1,66 @@
+/* miniprogram/pages/detail/detail.wxss */
+page{
+  height: 100%;
+  background-color: white;
+}
+.cates{
+  height:100%;
+}
+
+.cates .station_container{
+  height: 100%;
+  display: flex;
+}
+
+.cates .station_container .left_menu{
+  flex: 1;
+  height: 100%;
+  background-color: #a1a3a61e;
+}
+
+.cates .station_container .left_menu .menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cates .station_container .left_menu .active{
+  color:#2468a2;
+  border-left: 5rpx solid currentColor;
+}
+
+.cates .station_container .rignt_menu{
+  flex: 3;
+  height: 100%;
+}
+
+.cates .station_container .rignt_menu .map{
+  height: 400rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 216, 216, 0.425);
+}
+
+.cates .station_container .rignt_menu .title1{
+  height: 50rpx;
+  padding-left: 10rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  font-style: oblique;
+  border-bottom:5rpx solid #2468a2;
+}
+
+.cates .station_container .rignt_menu .title2{
+  height: 50rpx;
+  padding-left: 20rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  border-bottom:3rpx solid silver;
+}
+
+.content{
+  padding-left: 40rpx;
+  line-height: 50rpx;
+}
+

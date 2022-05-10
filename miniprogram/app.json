@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/station/station",
+    "pages/map/map",
+    "pages/servive/servive",
+    "pages/echarts/test",
+    "pages/detail/detail1",
+    "pages/loading/loading",
+    "pages/MainPage-Robot/robot",
+    "pages/detail/detail2",
+    "pages/detail/detail",
+    "pages/wave/wave"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2468a2",
+    "navigationBarTitleText": "subway",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2468a2",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/index.png",
+        "selectedIconPath": "./images/index.png"
+      },
+      {
+        "pagePath": "pages/station/station",
+        "text": "站点信息",
+        "iconPath": "./images/ser.png",
+        "selectedIconPath": "./images/ser2.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "导航",
+        "iconPath": "./images/wri.png",
+        "selectedIconPath": "./images/wri2.png"
+      },
+      {
+        "pagePath": "pages/MainPage-Robot/robot",
+        "text": "智能客服",
+        "iconPath": "./images/guanyu.png",
+        "selectedIconPath": "./images/guanyu.png"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "plugins": {
+    "subway": {
+      "version": "1.0.10",
+      "provider": "wx6aaf93c4435fa1c1"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

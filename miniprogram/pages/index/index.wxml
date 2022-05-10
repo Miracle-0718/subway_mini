@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<navigator url="../loading/loading">   </navigator>
+<!-- 消息通知栏 -->
+<view class='notice'>
+  <view class="notice_left">
+    <view class='icon'>
+      <image mode='aspectFill' src="../../images/notice.jpg"></image>
+    </view>
+      <view class="left-box">
+        <view class="left-text"></view>
+        <view class='content-box'>
+          <view class='content-text' animation="{{animationData}}"><text id="text">{{text}}</text></view>
+        </view>
+        <view class="right-text"></view>
+      </view>
+  </view>
+  <view class="notice_right">
+    <text class="more">更多资讯></text>
+  </view>
+</view>
+<!-- 功能矩阵 -->
+<view class="bg">
+  <view class="Img" bindtap="ToRobot">
+<image src="../../images/logo1.jpg"></image>
+</view>
+<view>上海地铁信息可视化</view>
+</view>
+
+<view class="section">
+  
+  <view class="table-view">
+    <view class="col-3" bindtap="ToPrice">
+      <mp-icon icon="help" color="black" size="{{25}}"></mp-icon>
+      <view>票价查询</view>
+    </view>
+   <view class="col-3">
+    <mp-icon icon="note" color="black" size="{{25}}"></mp-icon>
+      <view>规章制度</view>
+    </view>
+    <view class="col-3">
+      <mp-icon icon="location" color="black" size="{{25}}"></mp-icon>
+      <view>站点信息</view>
+    </view>
+
+  
+   <view class="col-3">
+    <mp-icon icon="transfer2" color="black" size="{{25}}"></mp-icon>
+      <view>首末班车</view>
+    </view>
+    <view class="col-3" bindtap="ToRobot">
+      <mp-icon icon="me" color="black" size="{{25}}"></mp-icon>
+      <view>智能客服</view>
+    </view>
+    <view class="col-3">
+      <mp-icon icon="link" color="black" size="{{25}}"></mp-icon>
+      <view>关于我们</view>
+    </view>
+
+  </view>
+</view>

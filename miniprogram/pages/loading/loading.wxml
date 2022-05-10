@@ -1,0 +1,6 @@
+<!--miniprogram/pages/loading/loading.wxml-->
+<view class="loading">
+ <view class='circle'>
+   <view class="wave"></view>
+ </view>
+</view>

@@ -1,0 +1,4 @@
+<!--miniprogram/pages/echarts/test.wxml-->
+<view class="chart-box">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>

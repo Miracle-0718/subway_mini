@@ -1,0 +1,47 @@
+<!--pages/station/station.wxml-->
+<!-- 顶部滑动导航栏（两项） -->
+<view class="nav">
+  <view id="0" class="{{currentIndex==0?'selected':'normal'}}" bindtap='changeCurrentIndex'>
+    <view>基本信息</view>
+  </view>
+  <view id="1" class="{{currentIndex==1?'selected':'normal'}}" bindtap='changeCurrentIndex'>
+    <view>实时情况</view>
+  </view>
+</view>
+<!-- 滑动导航栏页面切换 -->
+<!-- swiper组件实现滑动页面效果 -->
+<swiper current="{{currentIndex}}" style="height:{{winHeight}}rpx">
+  <swiper-item>
+    <!-- 路线信息列表 -->
+    <view wx:for="{{lines}}" wx:key='item' class="lineslist" id="{{item.id}}" bindtap="lineDetail">
+      <view class="lineListTitle">
+        <text class="number">{{item.nm}}</text>
+      </view>
+      <view class="lineListDetails">
+        <view class="Img">
+          <image mode='aspectFill' src="../../images/sub.jpg"></image>
+        </view>
+        <view class="stationInfo">
+          <view class="Title">{{item.station}}</view>
+          <text class="now">{{item.now}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <!-- 实时信息 -->
+    <scroll-view scroll-x="true">
+      <view style="display:flex">
+        <view wx:for="{{personnumber}}" wx:key='item' style="width:200rpx" id="{{item.id}}" bindtap="lineDetail">
+          <view>{{item.nm}}</view>
+          <view style="font-size:20rpx">{{item.rt}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 轨迹回放 -->
+    <view class="Now_map">
+      <map id="map" polyline="{{polyline}}" markers="{{markers}}" bindtap="move"></map>
+    </view>
+  <!-- 轨迹回放 -->
+  </swiper-item>
+</swiper>
